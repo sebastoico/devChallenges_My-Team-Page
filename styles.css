@@ -1,0 +1,136 @@
+body{
+  color: #000000;
+  background-color: #FFFFFF;
+  padding: 70px 0 20px;
+  height: 100%;
+  width: min-content;
+  margin: auto;
+}
+
+.body{
+  height: 100%;
+  width: min-content;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 52px;
+}
+
+.header{
+  display: flex;
+}
+.header__h1{
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+
+  color: #000000;
+  margin: 0;
+  flex: 1;
+}
+.header__info{
+  flex: 1;
+  /* flex-basis: 100%; */
+}
+.header__h2{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+
+  text-transform: uppercase;
+
+  color: #000000;
+  margin: 0;
+}
+.header__p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #000000;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  justify-content: center;
+  gap: 15px 34px;
+}
+.container {
+  height: 480px;
+  display: grid;
+}
+.container--impar {
+  align-items: end;
+}
+.card {
+  display: block;
+  position: relative;
+  width: fit-content;
+  margin: 0 34px 0 0;
+}
+.card__img {
+  width: 238px;
+  height: 341px;
+}
+.card__name {
+  font: normal 18px Poppins;
+  font-weight: 600;
+  line-height: 27px;
+
+  color: #000000;
+  margin: 0;
+  margin-top: 15px;
+}
+.card__role {
+  position: absolute;
+  top: 0;
+  left: 264px;
+  width: 341px;
+
+  transform-origin: top left;
+  transform: rotate(90deg);
+  font: normal 12px PT Serif;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+}
+
+.footer__p{
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+
+  color: #BDBDBD;
+  margin: 0;
+}
+.footer__a{
+  color: #BDBDBD;
+  font-weight: bold;
+}
+
+@media (max-width: 918px) {
+  .header {
+    flex-direction: column;
+    row-gap: 38px;
+  }
+  .main {
+    grid-template-columns: repeat(2, min-content);
+  }
+}

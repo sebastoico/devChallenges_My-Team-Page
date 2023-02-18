@@ -4,71 +4,90 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif&family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" />
+
+  <link rel="stylesheet" href="styles.css">
+
   <title>My team page</title>
 </head>
 <body>
-  <header class="header">
-    <h1 class="header__h1">The creative crew</h1>
-    <div>
-      <h2 class="header__h2">Who we are</h2>
-      <p class="header__p">We are team of creatively diverse.  driven.  innovative individuals working in various locations from the world.</p>
-    </div>
-  </header>
-
-  <main class="main">
-    <div class="main__div">
-      <div class="main__card card">
-        <div>
-          <img class="card__img" src="assets/photo1.png" alt="photo1">
-          <h2 class="card__name">Bill Mahoney</h2>
-        </div>
-        <p class="card__role">Product Owner</p>
+  <div class="body">
+    <header class="header">
+      <h1 class="header__h1">The creative crew</h1>
+      <div class="header__info">
+        <h2 class="header__h2">Who we are</h2>
+        <p class="header__p">We are team of creatively diverse.  driven.  innovative individuals working in various locations from the world.</p>
       </div>
-
-      <div class="main__card card">
-        <div>
-          <img class="card__img" src="assets/photo2.png" alt="photo1">
-          <h2 class="card__name">Saba Cabrera</h2>
+    </header>
+  
+    <main class="main">
+      <div class="container">
+        <div class="card">
+          <div>
+            <img class="card__img" alt="photo1" src="assets/photo1.png">
+            <h2 class="card__name">Bill Mahoney</h2>
+          </div>
+          <p class="card__role">Product owner</p>
         </div>
-        <p class="card__role">Art Director</p>
       </div>
-
-      <div class="main__card card">
-        <div>
-          <img class="card__img" src="assets/photo3.png" alt="photo1">
-          <h2 class="card__name">Shae Le</h2>
+      <div class="container">
+        <div class="card">
+          <div>
+            <img class="card__img" alt="photo2" src="assets/photo2.png">
+            <h2 class="card__name">Saba Cabrera</h2>
+          </div>
+          <p class="card__role">Art director</p>
         </div>
-        <p class="card__role">Tech Lead</p>
       </div>
-
-      <div class="main__card card">
-        <div>
-          <img class="card__img" src="assets/photo4.png" alt="photo1">
-          <h2 class="card__name">Skylah Lu</h2>
+      <div class="container">
+        <div class="card">
+          <div>
+            <img class="card__img" alt="photo3" src="assets/photo3.png">
+            <h2 class="card__name">Shae Le</h2>
+          </div>
+          <p class="card__role">Tech lead</p>
         </div>
-        <p class="card__role">UX Designer</p>
       </div>
-
-      <div class="main__card card">
-        <div>
-          <img class="card__img" src="assets/photo5.png" alt="photo1">
-          <h2 class="card__name">Griff Richards</h2>
+      <div class="container">
+        <div class="card">
+          <div>
+            <img class="card__img" alt="photo4" src="assets/photo4.png">
+            <h2 class="card__name">Skylah Lu</h2>
+          </div>
+          <p class="card__role">UX Designer</p>
         </div>
-        <p class="card__role">Developer</p>
       </div>
-
-      <div class="main__card card">
-        <div>
-          <img class="card__img" src="assets/photo6.png" alt="photo1">
-          <h2 class="card__name">Stan John</h2>
+      <div class="container">
+        <div class="card">
+          <div>
+            <img class="card__img" alt="photo5" src="assets/photo5.png">
+            <h2 class="card__name">Griff Richards</h2>
+          </div>
+          <p class="card__role">Developer</p>
         </div>
-        <p class="card__role">Developer</p>
       </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <p class="footer__p">created by <a class="footer__a" href="https://github.com/sebastoico">sebastoico</a> - devChallenges.io</p>
-  </footer>
+      <div class="container">
+        <div class="card">
+          <div>
+            <img class="card__img" alt="photo6" src="assets/photo6.png">
+            <h2 class="card__name">Stan John</h2>
+          </div>
+          <p class="card__role">Developer</p>
+        </div>
+      </div>
+    </main>
+  
+    <footer class="footer">
+      <p class="footer__p">created by <a class="footer__a" href="https://github.com/sebastoico">sebastoico</a> - devChallenges.io</p>
+    </footer>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
